@@ -1,0 +1,54 @@
+Arguments: 
+  /Users/pedson/.nvm/versions/node/v8.12.0/bin/node /Users/pedson/.nvm/versions/node/v8.12.0/bin/yarn install
+
+PATH: 
+  /Users/pedson/.cargo/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Applications/VMware Fusion.app/Contents/Public:/usr/local/share/dotnet:~/.dotnet/tools:/Library/Frameworks/Mono.framework/Versions/Current/Commands:/Applications/Xamarin Workbooks.app/Contents/SharedSupport/path-bin:/Users/pedson/.nvm/versions/node/v8.12.0/bin:/Users/pedson/Applications/azure-cli/bin
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  8.12.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/pedson/Developer/Leap/Janelia/ndb/mnb-public-proxy/package.json: Unexpected token } in JSON at position 599
+      at JSON.parse (<anonymous>)
+      at /Users/pedson/.nvm/versions/node/v8.12.0/lib/node_modules/yarn/lib/cli.js:1130:59
+      at Generator.next (<anonymous>)
+      at step (/Users/pedson/.nvm/versions/node/v8.12.0/lib/node_modules/yarn/lib/cli.js:92:30)
+      at /Users/pedson/.nvm/versions/node/v8.12.0/lib/node_modules/yarn/lib/cli.js:103:13
+      at <anonymous>
+
+npm manifest: 
+  {
+    "name": "mnb-public-proxy",
+    "version": "1.4.0",
+    "private": true,
+    "main": "src/transformApp.js",
+    "repository": "https://github.com/MouseLightPipeline/search-api.git",
+    "author": "Patrick Edson <pedson@leapscientific.com>",
+    "license": "Janelia",
+    "dockerRepository": "mouselightdatabrowser",
+    "dockerImageName": "public-proxy",
+    "scripts": {
+      "docker-build": "gulp docker-build",
+      "release": "gulp release"
+    },
+    "dependencies": {
+    },
+    "devDependencies": {
+      "@types/gulp": "^4.0.3",
+      "@types/gulp-shell": "^0.0.30",
+      "gulp": "^3.9.1",
+      "gulp-shell": "^0.6.3",
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
