@@ -9,7 +9,7 @@
   "dockerImageName": "public-proxy",
   "scripts": {
     "docker-build": "gulp docker-build",
-    "release": "gulp release"
+    "docker-release": "gulp release"
   },
   "dependencies": {},
   "devDependencies": {
