@@ -1,6 +1,6 @@
 {
   "name": "mnb-public-proxy",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "private": true,
   "repository": "https://github.com/MouseLightPipeline/mnb-public-proxy.git",
   "author": "Patrick Edson <pedson@leapscientific.com>",
@@ -8,14 +8,18 @@
   "dockerRepository": "mouselightdatabrowser",
   "dockerImageName": "public-proxy",
   "scripts": {
-    "docker-build": "gulp docker-build",
-    "docker-release": "gulp release"
+    "clean": "tsc && gulp clean",
+    "compile": "tsc && gulp compile",
+    "build": "tsc && gulp build",
+    "docker-build": "tsc && gulp docker-build",
+    "docker-release": "tsc && gulp release"
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/gulp": "3",
-    "@types/gulp-shell": "^0.0.31",
-    "gulp": "^3.9.1",
-    "gulp-shell": "^0.6.3"
+    "@types/gulp": "4.0.9",
+    "@types/gulp-shell": "^0.7.0",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-shell": "^0.8.0"
   }
 }
