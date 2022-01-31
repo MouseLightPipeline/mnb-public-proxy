@@ -28,6 +28,7 @@ tasks:
       - docker tag {{.IMAGEWITHREVERSION}} {{.IMAGELATEST}}
   release:
     cmds:
+      - task: build
       - docker push {{.IMAGEWITHVERSION}}
       - docker push {{.IMAGEWITHMINORVERSION}}
       - docker push {{.IMAGEWITHREVERSION}}
