@@ -3,7 +3,6 @@
 version: '3'
 
 vars:
-  GREETING: Hello, World!
   REPOSITORY: mouselightdatabrowser
   IMAGE: public-proxy
   REPOIMAGE: "{{.REPOSITORY}}/{{.IMAGE}}"
@@ -16,10 +15,6 @@ vars:
   IMAGELATEST: "{{.REPOIMAGE}}:latest"
 
 tasks:
-  default:
-    cmds:
-      - echo "{{.GREETING}}"
-    silent: true
   build:
     cmds:
       - docker build --platform linux/amd64 --tag {{.IMAGEWITHVERSION}} .
